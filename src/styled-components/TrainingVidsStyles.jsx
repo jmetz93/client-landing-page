@@ -23,7 +23,7 @@ export const LinkContainer = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 25px;
+  margin-left: 28px;
 `
 
 export const Link = styled.a`

@@ -19,6 +19,10 @@ const TrainingVids = () => (
         </React.Fragment>)
         })}
     </LinkContainer>
+    <h2>In the Field Training:</h2>
+    {inFieldVids.map((video) => {
+      return(<Link href={video.link} target='_blank' rel='noopener' style={{ marginRight: '15px' }}>{video.description}</Link>)
+    })}
   </Container>
 )
 

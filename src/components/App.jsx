@@ -12,12 +12,10 @@ import TrainingVids from './TrainingVids'
 // Styled Components
 import { Header, Title, Container, Footer } from '../styled-components/AppStyles'
 
-
 export default class App extends React.Component {
   state = {}
 
   render() {
-    console.log('hi')
     return (
       <div>
         <Header>
@@ -27,7 +25,6 @@ export default class App extends React.Component {
           <AboutMe></AboutMe>
           <TrainingVids></TrainingVids>
         </Container>
-
       </div>
     )
   }
