@@ -15,7 +15,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  allign-items: center;
+  align-items: center;
 `
 
 export const Footer = styled.section``
