@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 
-const Header = styled.section`
+export const Header = styled.section`
   background: #33A5FF;
   display: flex;
   justify-content: center
 `
 
-const Title = styled.h1`
-  textAllign: center
+export const Title = styled.h1`
+  textAllign: center;
+  color: white;
 `
-
-
-export { Header }
