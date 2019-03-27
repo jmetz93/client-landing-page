@@ -10,3 +10,12 @@ export const Title = styled.h1`
   textAllign: center;
   color: white;
 `
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  allign-items: center;
+`
+
+export const Footer = styled.section``
