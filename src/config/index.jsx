@@ -55,3 +55,6 @@ export const inFieldVids = [
     link: 'https://youtu.be/-Xdfck7hIqs'
   }
 ]
+
+export const rateCalcLink = 'http://life.securitynational.com/calc/markets/1'
+

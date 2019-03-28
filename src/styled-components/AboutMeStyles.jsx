@@ -5,7 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 70%;
+  background-color: #DCDCDC;
+  margin-top: 50px;
 `
 
 export const Row = styled.div`
@@ -18,5 +20,8 @@ export const Bio = styled.div`
   justify-content: center;
   text-align: center;
   margin-top: 20px;
+  margin-left: 130px;
   font-size: 20px;
+  margin-bottom: 20px;
+  width: 75%
 `

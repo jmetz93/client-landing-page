@@ -5,7 +5,7 @@ import AboutMe from './AboutMe'
 // import Contact from './Contact'
 // import Downloads from './Downloads'
 // import OrderLeads from './OrderLeads'
-// import RateCalc from './RateCalc'
+import RateCalc from './RateCalc'
 // import SignUp from './SignUp'
 import TrainingVids from './TrainingVids'
 
@@ -24,6 +24,8 @@ export default class App extends React.Component {
         <Container>
           <AboutMe></AboutMe>
           <TrainingVids></TrainingVids>
+          <RateCalc></RateCalc>
+          
         </Container>
       </div>
     )
