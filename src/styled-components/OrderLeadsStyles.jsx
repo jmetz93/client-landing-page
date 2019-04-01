@@ -18,11 +18,4 @@ export const Heading = styled.div`
   width: 100%;
 `
 
-export const TextContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 45px;
-`
+// export const Title = styled
