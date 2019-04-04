@@ -58,3 +58,45 @@ export const inFieldVids = [
 
 export const rateCalcLink = 'http://life.securitynational.com/calc/markets/1'
 
+
+export const orderLeads = {
+  directMail: [
+    {
+      type: 'numberLink',
+      step: '1. ',
+      linkTitle: 'Need A Lead',
+      description: ' - Number: 800-253-1432 Contact: Cheryl Jones or Laura Eddins..(Spanish available).. $32 per lead.',
+      source: 'https://needalead.com/'
+    },
+    {
+      type: 'numberLink',
+      step: '2. ',
+      linkTitle: 'Lead Connections',
+      description: ' - Number: 888-267-3165 Contact: Chris Etheridge.. Lead Connection $30 per lead  /$15 with lead credit.',
+      source: 'http://www.leadconnections.com/'
+    },
+    {
+      type: 'numberLink',
+      step: '3. ',
+      linkTitle: 'Lead Concepts',
+      description: ' - Number: 800-283-0187 Contact: Peter Higham.. (Spanish available) $455 per 1000 mailers.',
+      source: 'http://leadconcepts.com/final-expense--burial.html'
+    }],
+    telemarketing: [{
+      type: 'link',
+      linkTitle: 'Peak Leads',
+      description: ' - Number: 828-764-1759  Contact: Buddy Hamby..  $18 per lead $9 with lead credit.',
+      source: 'http://www.peakleadsusa.com/'
+    }],
+    internet: [{
+      type: 'link',
+      linkTitle: 'Customized Quotes',
+      description: ' - Number: 1-800-717-3915 Contact: Lee .. $35 per lead. (exclusive leads / exclusive territory)',
+      source: 'http://www.customizedquote.com/'
+    },
+    {
+      type: 'ryans leads',
+      title: 'Facebook Leads',
+      description: ' - Call: Ryan Mattingly (424-291-1987) .. $15 per lead. (exclusive leads / all within 15-25 mile radius)'
+    }]
+}
