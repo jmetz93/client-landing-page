@@ -1,29 +1,11 @@
 require('dotenv').config()
-const express = require('express')
-const parser = require('body-parser')
-const path = require('path')
-const cors = require('cors')
-const helmet = require('helmet')
+// plugin to send email
 const nodemailer = require('nodemailer')
 
-const app = express()
-const port = process.env.PORT
+// async..await is not allowed in global scope, must use a wrapper
+async function sendEmail(email, name, message){
 
-const { sendEmail } = require('./email')
-
-app.use(cors())
-app.use(helmet())
-app.use(parser.json())
-app.use(parser.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, '../dist')))
-
-app.get('/ryan', (req, res) => {
-  res.send('Ryan is queer')
-})
-
-app.post('/email', (req, res) => {
-  const { email, name, message } = req.body;
-
+  
   const smtpTransport = nodemailer.createTransport({
     service: 'Gmail',
     port: 465,
@@ -35,7 +17,7 @@ app.post('/email', (req, res) => {
 
   const mailOptions = {
     from: 'jacob.metzinger@yahoo.com',
-    to: process.env.EMAIL_JACOB,
+    to: process.env.EMAIL_ADDRESS,
     subject: 'bitch',
     text: 'yo',
     html: `<p>${name}</p>
@@ -56,9 +38,12 @@ app.post('/email', (req, res) => {
     
     smtpTransport.close()
   })
-})
+  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+}
 
-app.listen(port, () => {
-  console.log('Listening on port: ', port)
-})
 
+
+module.exports = {
+  sendEmail
+}

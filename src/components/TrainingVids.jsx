@@ -1,14 +1,14 @@
 import React from 'react'
 
 // styled components
-import { Container, Heading, LinkContainer, Row, Link } from '../styled-components/TrainingVidsStyles'
+import { Container, Heading, TextHeading, LinkContainer, Row, Link } from '../styled-components/TrainingVidsStyles'
 
 // config videos
 import { trainingVideos, inFieldVids } from '../config'
 
 const TrainingVids = () => (
   <Container>
-    <Heading><h2 style={{ color: 'white' }}>TRAINING WEBINARS</h2></Heading>
+    <Heading><TextHeading>Training Webinars</TextHeading></Heading>
     <LinkContainer>
       {trainingVideos.map((video) => {
         return(<React.Fragment key={video.key}>

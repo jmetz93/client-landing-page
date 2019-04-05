@@ -17,6 +17,15 @@ export const Heading = styled.div`
   margin-bottom: 20px;
   width: 80%;
 `
+
+export const TextHeading = styled.div`
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`
+
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: flex-start;

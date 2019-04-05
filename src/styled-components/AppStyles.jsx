@@ -10,6 +10,7 @@ export const Header = styled.section`
 export const Title = styled.h1`
   textAllign: center;
   color: white;
+  font-size: 40px;
 `
 
 export const Container = styled.div`

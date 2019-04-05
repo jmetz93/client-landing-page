@@ -18,6 +18,14 @@ export const Heading = styled.div`
   width: 80%;
 `
 
+export const TextHeading = styled.div`
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`
+
 export const RowContainer = styled.div`
   display: flex;
   flex-direction: column;

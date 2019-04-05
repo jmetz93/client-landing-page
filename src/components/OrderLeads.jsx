@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styled components
-import { Container, Heading, Title, LinksContainer, Link, Row } from '../styled-components/OrderLeadsStyles'
+import { Container, Heading, TextHeading, Title, LinksContainer, Link, Row } from '../styled-components/OrderLeadsStyles'
 
 // config
 import { orderLeads } from '../config'
@@ -9,7 +9,7 @@ import { orderLeads } from '../config'
 const OrderLeads = () => (
   <Container>
     <Heading>
-      <h2 style={{ color: 'white' }}>START GETTING YOUR OWN LEADS</h2>
+      <TextHeading>Start Getting Your Own Leads</TextHeading>
     </Heading>
     <Container>
       <Container style={{ marginBottom: '25px' }}>
