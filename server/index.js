@@ -34,10 +34,10 @@ app.post('/email', (req, res) => {
   })
 
   const mailOptions = {
-    from: 'jacob.metzinger@yahoo.com',
-    to: process.env.EMAIL_JACOB,
-    subject: 'bitch',
-    text: 'yo',
+    from: email,
+    to: process.env.EMAIL_ADDRESS,
+    subject: name,
+    text: message,
     html: `<p>${name}</p>
             <p>${email}</p>
             <p>${message}</p>`
