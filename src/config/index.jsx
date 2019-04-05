@@ -60,6 +60,12 @@ export const rateCalcLink = 'http://life.securitynational.com/calc/markets/1'
 
 
 export const orderLeads = {
+  watchThis: [
+    {
+      description: 'Click Here To Learn About Ordering Leads',
+      link: 'https://register.gotowebinar.com/recording/60604379115389187?utm_source=FE+Agents+3.25.19&utm_campaign=ce0f20e7e5-EMAIL_CAMPAIGN_2017_11_01_COPY_01&utm_medium=email&utm_term=0_096658a777-ce0f20e7e5-66156885'
+    }
+  ],
   directMail: [
     {
       type: 'numberLink',
@@ -100,3 +106,42 @@ export const orderLeads = {
       description: ' - Call: Ryan Mattingly (424-291-1987) .. $15 per lead. (exclusive leads / all within 15-25 mile radius)'
     }]
 }
+
+export const downloads = [
+  {
+    description: 'Life Policies at Security National Life (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp85bcp_390273.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Simple Security Plan Summary (English) (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp7q8a9_182530.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Simple Security Plan Summary (Spanish) (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/Simple%20Secuity%20Plan%20-%20Spanish.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Final Expense Presentation (English) (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp89lla_862647.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Final Expense Presentation (Spanish) (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp8b5jm_796487.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Rate Book and Underwriting (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp7d0i5_136652.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Medications (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp7er5e_725617.pdf?ver=1554220583046'
+  },
+  {
+    description: 'Height and Weight Chart (png)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp7o00l_959006.PNG?ver=1554220583046'
+  },
+  {
+    description: 'Historical Records Info (pdf)',
+    source: 'https://img1.wsimg.com/blobby/go/ad548db6-8014-41b7-a24f-5d236343017d/downloads/1cnp840dd_988881.pdf?ver=1554220583046'
+  },
+]

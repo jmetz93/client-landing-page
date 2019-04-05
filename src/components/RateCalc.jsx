@@ -7,7 +7,7 @@ import { Container, Heading, TextContainer } from '../styled-components/RateCalc
 import { rateCalcLink } from '../config'
 
 const RateCalc = () => (
-  <Container>
+  <Container style={{ backgroundColor: '#D3D3D3' }}>
     <Heading>
       <h2 style={{ color: 'white' }}>RATE CALCULATOR</h2>
     </Heading>

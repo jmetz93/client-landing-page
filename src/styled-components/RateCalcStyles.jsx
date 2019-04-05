@@ -5,17 +5,17 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 100px;
 `
 
 export const Heading = styled.div`
   display: flex;
   justify-content: center;
   background-color: #0000ff;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 80%;
 `
 
 export const TextContainer = styled.div`

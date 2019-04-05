@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const Header = styled.section`
   background: #33A5FF;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  width: 100%
 `
 
 export const Title = styled.h1`

@@ -9,9 +9,14 @@ import { orderLeads } from '../config'
 const OrderLeads = () => (
   <Container>
     <Heading>
-      <h2 style={{ color: 'white' }}>START GETTING LEADS HERE:</h2>
+      <h2 style={{ color: 'white' }}>START GETTING YOUR OWN LEADS</h2>
     </Heading>
     <Container>
+      <Container style={{ marginBottom: '25px' }}>
+        <Row style={{ fontSize: '25px', fontWeight: 'bold', marginTop: '20px', marginBottom: '20px' }}>
+          <Link href={orderLeads.watchThis[0].link} target='_blank' rel='noopener'>{orderLeads.watchThis[0].description}</Link> 
+        </Row>
+      </Container>
       <Title>Internet Generated Leads</Title>
       <LinksContainer>
         <Row>

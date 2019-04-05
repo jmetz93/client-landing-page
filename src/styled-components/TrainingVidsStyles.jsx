@@ -5,8 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  margin-top: 50px;
+  width: 100%;
+  margin-top: 80px;
 `
 
 export const Heading = styled.div`
@@ -15,7 +15,7 @@ export const Heading = styled.div`
   background-color: #0000ff;
   margin-top: 50px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 80%;
 `
 export const LinkContainer = styled.div`
   display: flex;
@@ -27,7 +27,8 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 28px;
-  margin-bottom: -15px
+  margin-bottom: -15px;
+  font-size: 20px;
 `
 
 export const Link = styled.a`

@@ -21,7 +21,7 @@ const TrainingVids = () => (
     </LinkContainer>
     <h2 style={{ marginTop: '25px', marginBottom: '-5px' }}>In the Field Training:</h2>
     {inFieldVids.map((video) => {
-      return(<Link href={video.link} target='_blank' rel='noopener' style={{ marginRight: '15px' }}>{video.description}</Link>)
+      return(<Row style={{ marginRight: '2%' }}><Link href={video.link} target='_blank' rel='noopener' style={{ marginRight: '15px' }}>{video.description}</Link></Row>)
     })}
   </Container>
 )

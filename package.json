@@ -21,12 +21,14 @@
   "homepage": "https://github.com/jmetz93/client-landing-page#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "helmet": "^3.16.0",
     "nodemon": "^1.18.10",
     "react": "^16.8.5",
+    "react-bootstrap": "^1.0.0-beta.6",
     "react-dom": "^16.8.5",
     "styled-components": "^4.2.0"
   },
