@@ -21,7 +21,7 @@ export const Bio = styled.div`
   text-align: center;
   margin-top: 20px;
   margin-left: 12%;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
   width: 75%
 `

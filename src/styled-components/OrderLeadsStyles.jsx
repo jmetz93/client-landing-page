@@ -24,6 +24,7 @@ export const TextHeading = styled.div`
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 `
 
 export const Title = styled.div`
@@ -45,10 +46,13 @@ export const Row = styled.div`
   flex-direction: row;
   font-size: 18px;
   margin-bottom: 5px;
+  text-align: center;
+  
 `
 
 export const Link = styled.a`
   text-decoration: underline;
   margin-left: 5px;
   margin-rigth: 5px;
+  text-align: center;
 `

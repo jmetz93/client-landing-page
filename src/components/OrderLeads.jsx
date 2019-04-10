@@ -18,7 +18,7 @@ const OrderLeads = () => (
         </Row>
       </Container>
       <Title>Internet Generated Leads</Title>
-      <LinksContainer>
+      <LinksContainer style={{ flexWrap: 'nowrap' }}>
         <Row>
           <div style={{ textDecoration: 'underline', marginBottom: '5px' }}>{orderLeads.internet[1].title}</div>
           <div>{orderLeads.internet[1].description}</div>

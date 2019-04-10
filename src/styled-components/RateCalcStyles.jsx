@@ -24,6 +24,7 @@ export const TextHeading = styled.div`
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 `
 
 export const TextContainer = styled.div`

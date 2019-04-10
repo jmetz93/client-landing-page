@@ -45,6 +45,8 @@ export const Row = styled.a`
   color: black;
   margin-bottom: 5px;
   height: 100%;
+  text-align: center;
+  justify-content: center
 
   &:hover {
     background: #ff0000;
@@ -54,5 +56,5 @@ export const Row = styled.a`
 export const Text = styled.div`
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 10px;
+  
 `

@@ -1,0 +1,10 @@
+textarea, input {
+  font-size: 16px
+}
+
+@media screen and (max-width: 600px) {
+  textarea, input {
+    font-size: 12px;
+  }
+}
+

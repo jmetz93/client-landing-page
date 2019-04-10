@@ -55,7 +55,7 @@ export default class App extends React.Component {
           <Downloads />
           <Contact />
         </Container>
-        <div>
+        <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             <div style={phantom} />
             <div style={style}>
                 <div>Website built and designed by Jacob Metzinger{"\n"}</div>

@@ -12,7 +12,7 @@ const RateCalc = () => (
       <TextHeading>Rate Calculator</TextHeading>
     </Heading>
     <TextContainer>
-      <div style={{ fontSize: '25px', marginBottom: '10px', fontWeight: 'bold' }}>Use the following link to get the rates you need:</div>
+      <div style={{ fontSize: '25px', marginBottom: '10px', fontWeight: 'bold', textAlign: 'center' }}>Use the following link to get the rates you need:</div>
       <a href={rateCalcLink} target='_blank' rel='noopener' style={{ fontSize: '25px' }}>Calculate</a>
     </TextContainer>
   </Container>
