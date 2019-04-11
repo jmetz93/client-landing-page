@@ -1,7 +1,9 @@
 import React from 'react'
 
 // styled components
-import { Container, Heading, TextHeading, Title, LinksContainer, Link, Row } from '../styled-components/OrderLeadsStyles'
+import { 
+  Container, Heading, TextHeading, Title, LinksContainer, Link, Row, WatchThisRow, Text, FbLeads
+ } from '../styled-components/OrderLeadsStyles'
 
 // config
 import { orderLeads } from '../config'
@@ -12,29 +14,29 @@ const OrderLeads = () => (
       <TextHeading>Start Getting Your Own Leads</TextHeading>
     </Heading>
     <Container>
-      <Container style={{ marginBottom: '25px' }}>
-        <Row style={{ fontSize: '25px', fontWeight: 'bold', marginTop: '20px', marginBottom: '20px' }}>
+      <Container style={{ marginBottom: '5%' }}>
+        <WatchThisRow>
           <Link href={orderLeads.watchThis[0].link} target='_blank' rel='noopener'>{orderLeads.watchThis[0].description}</Link> 
-        </Row>
+        </WatchThisRow>
       </Container>
       <Title>Internet Generated Leads</Title>
       <LinksContainer style={{ flexWrap: 'nowrap' }}>
         <Row>
-          <div style={{ textDecoration: 'underline', marginBottom: '5px' }}>{orderLeads.internet[1].title}</div>
-          <div>{orderLeads.internet[1].description}</div>
+          <FbLeads>{orderLeads.internet[1].title}</FbLeads>
+          <Text>{orderLeads.internet[1].description}</Text>
         </Row>
         <Row>
-          <Link href={orderLeads.internet[0].source} style={{ marginLeft: '0px' }} target='_blank' rel='noopener'>{orderLeads.internet[0].linkTitle}</Link>
-          <div>{orderLeads.internet[0].description}</div>
+          <Link href={orderLeads.internet[0].source} style={{ marginLeft: '0%' }} target='_blank' rel='noopener'>{orderLeads.internet[0].linkTitle}</Link>
+          <Text>{orderLeads.internet[0].description}</Text>
         </Row>
       </LinksContainer>
       <Title style={{ marginTop: '10px' }}>Direct Mail Leads</Title>
       <LinksContainer>
         {orderLeads.directMail.map((entry) => {
            return <Row>
-              <div>{entry.step}</div>
+              <Text>{entry.step}</Text>
               <Link href={entry.source} target='_blank' rel='noopener'>{entry.linkTitle}</Link>
-              <div>{entry.description}</div>
+              <Text>{entry.description}</Text>
             </Row> 
         })}
       </LinksContainer>
@@ -43,7 +45,7 @@ const OrderLeads = () => (
         {orderLeads.telemarketing.map((entry) => {
           return <Row>
             <Link href={entry.source} target='_blank' rel='noopener'>{entry.linkTitle}</Link>
-            <div>{entry.description}</div>
+            <Text>{entry.description}</Text>
           </Row>
         })}
       </LinksContainer>

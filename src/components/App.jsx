@@ -60,9 +60,9 @@ export default class App extends React.Component {
             <div style={style}>
                 <div>Website built and designed by Jacob Metzinger{"\n"}</div>
                 <div>For business inquiries:</div>
-                <div style={{marginBottom: '10px'}}>
+                <div style={{marginBottom: '1%'}}>
                   <a href={"mailto:" + 'jacob.adam.metzinger@gmail.com'}>jacob.adam.metzinger@gmail.com</a>
-                  <div style={{ marginTop: '5px'}}>(424)216-2291</div>
+                  <div style={{ marginTop: '.3%'}}>(424)216-2291</div>
                 </div>
                 <div style={icons}> 
                     <SocialIcon url="https://www.linkedin.com/in/jacob-metzinger-a2b8a7142/" />

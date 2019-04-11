@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styled components
-import { Container, Heading, TextHeading, TextContainer } from '../styled-components/RateCalcStyles'
+import { Container, Heading, TextHeading, TextContainer, Text, Link } from '../styled-components/RateCalcStyles'
 
 // config
 import { rateCalcLink } from '../config'
@@ -12,8 +12,8 @@ const RateCalc = () => (
       <TextHeading>Rate Calculator</TextHeading>
     </Heading>
     <TextContainer>
-      <div style={{ fontSize: '25px', marginBottom: '10px', fontWeight: 'bold', textAlign: 'center' }}>Use the following link to get the rates you need:</div>
-      <a href={rateCalcLink} target='_blank' rel='noopener' style={{ fontSize: '25px' }}>Calculate</a>
+      <Text>Use the following link to get the rates you need:</Text>
+      <Link href={rateCalcLink} target='_blank' rel='noopener' >Calculate</Link>
     </TextContainer>
   </Container>
 )

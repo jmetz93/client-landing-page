@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   background-color: #DCDCDC;
-  margin-top: 50px;
+  margin-top: 5%;
 `
 export const Image = styled.image`
 
@@ -43,10 +43,9 @@ export const Bio = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 20px;
-  
+  margin-top: 3%;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   width: 75%
 
   @media screen and (max-width: 600px) {
