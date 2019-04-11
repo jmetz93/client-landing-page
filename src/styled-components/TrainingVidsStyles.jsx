@@ -25,6 +25,10 @@ export const TextHeading = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 25px;
+  }
 `
 
 export const LinkContainer = styled.div`
@@ -36,15 +40,38 @@ export const LinkContainer = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 28px;
-  margin-bottom: -15px;
-  font-size: 20px;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  white-space: nowrap;
+ 
+`
+
+export const Step = styled.div`
+  font-size: 25px;
+  margin-top: 2%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
 `
 
 export const Link = styled.a`
   color: 'black';
-  margin-left: 18px;
-  margin-top: 18px;
-  font-size: 1.2em;
+  margin-left: 7%;
+  margin-top: 2%;
+  font-size: 25px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
 `
 
+export const InFieldHeading = styled.div`
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 2%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+`

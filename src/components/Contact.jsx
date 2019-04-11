@@ -30,11 +30,6 @@ const buttons = {
   marginTop: '10px',
 }
 
-const input = {
-  width: '30%',
-  height: '30%'
-}
-
 const labels = {
   fontWeight: 'bold',
   marginBottom: '2%'
@@ -48,7 +43,20 @@ export default class Contact extends React.Component {
     sent: false,
     message: '',
     buttonText: 'Send',
-    formInputErrors: []
+    formInputErrors: [],
+    inputSize: '50',
+    textAreaCols: '100',
+    textAreaRows: '10'
+  }
+
+  componentDidMount = () => {
+    if(window.innerWidth < 600) {
+      this.setState({
+        inputSize: '25',
+        textAreaCols: '30',
+        textAreaRows: '8'  
+      })
+    } 
   }
 
   openEmail = () => {
@@ -117,7 +125,9 @@ export default class Contact extends React.Component {
   }
 
   render () {
-    const { name, email, message, emailOpen, formInputErrors } = this.state
+    const { 
+      name, email, message, emailOpen, formInputErrors, inputSize, textAreaCols, textAreaRows 
+    } = this.state
 
     return (
       <Container>
@@ -139,19 +149,19 @@ export default class Contact extends React.Component {
 
             <FormSectionContainer>
               <label class='message-name' htmlFor='message-name' style={labels}>Your Name</label>
-              <input onChange={e => this.handleInput(e)} name='name' class='message-name'  size='50' type='text' placeholder='Name' required value={name}/>
+              <input onChange={e => this.handleInput(e)} name='name' class='message-name'  size={inputSize} type='text' placeholder='Name' required value={name}/>
             </FormSectionContainer>
 
             
             <FormSectionContainer>
               <label class='message-email' htmlFor='message-email' style={labels}>Your Email</label>
-              <input onChange={e => this.handleInput(e)} name='email' class='message-email' size='50' type='email' placeholder='your@email.com' required value={email} />
+              <input onChange={e => this.handleInput(e)} name='email' class='message-email' size={inputSize} type='email' placeholder='your@email.com' required value={email} />
             </FormSectionContainer>
 
          
             <FormSectionContainer>
               <label class='message' htmlFor='message-input' style={labels}>Your Message</label>
-              <textarea onChange={e => this.handleInput(e)} rows="10" cols="100" name='message' class='message-input' type='text' placeholder='Please write your message here' value={message} required/>
+              <textarea onChange={e => this.handleInput(e)} rows={textAreaRows} cols={textAreaCols} name='message' class='message-input' type='text' placeholder='Please write your message here' value={message} required/>
             </FormSectionContainer>
 
             <div className='button--container' style={{ marginTop: '2%' }}>
