@@ -2,7 +2,7 @@ import React from 'react'
 
 // styled components
 import { 
-  Container, Heading, TextHeading, Title, LinksContainer, Link, Row, WatchThisRow, Text, FbLeads
+  Container, Heading, TextHeading, Title, LinksContainer, Link, Row, WatchThisRow, Text, FbLeads, WatchThisLink
  } from '../styled-components/OrderLeadsStyles'
 
 // config
@@ -15,9 +15,9 @@ const OrderLeads = () => (
     </Heading>
     <Container>
       <Container style={{ marginBottom: '5%' }}>
-        <WatchThisRow>
-          <Link href={orderLeads.watchThis[0].link} target='_blank' rel='noopener'>{orderLeads.watchThis[0].description}</Link> 
-        </WatchThisRow>
+        <Row>
+          <WatchThisLink href={orderLeads.watchThis[0].link} target='_blank' rel='noopener'>{orderLeads.watchThis[0].description}</WatchThisLink> 
+        </Row>
       </Container>
       <Title>Internet Generated Leads</Title>
       <LinksContainer style={{ flexWrap: 'nowrap' }}>
@@ -30,7 +30,7 @@ const OrderLeads = () => (
           <Text>{orderLeads.internet[0].description}</Text>
         </Row>
       </LinksContainer>
-      <Title style={{ marginTop: '10px' }}>Direct Mail Leads</Title>
+      <Title style={{ marginTop: '3%' }}>Direct Mail Leads</Title>
       <LinksContainer>
         {orderLeads.directMail.map((entry) => {
            return <Row>
@@ -40,7 +40,7 @@ const OrderLeads = () => (
             </Row> 
         })}
       </LinksContainer>
-      <Title style={{ marginTop: '10px' }}>Telemarketing Leads</Title>
+      <Title style={{ marginTop: '1%' }}>Telemarketing Leads</Title>
       <LinksContainer>
         {orderLeads.telemarketing.map((entry) => {
           return <Row>

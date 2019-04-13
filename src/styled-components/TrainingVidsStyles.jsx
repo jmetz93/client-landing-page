@@ -16,6 +16,7 @@ export const Heading = styled.div`
   margin-top: 50px;
   margin-bottom: 20px;
   width: 80%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 export const TextHeading = styled.div`
@@ -26,7 +27,7 @@ export const TextHeading = styled.div`
   margin-bottom: 10px;
   text-align: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 25px;
   }
 `
@@ -50,7 +51,7 @@ export const Step = styled.div`
   font-size: 25px;
   margin-top: 2%;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `
@@ -61,7 +62,7 @@ export const Link = styled.a`
   margin-top: 2%;
   font-size: 25px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `
@@ -71,7 +72,7 @@ export const InFieldHeading = styled.div`
   font-weight: bold;
   margin-top: 2%;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `

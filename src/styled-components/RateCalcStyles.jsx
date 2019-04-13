@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 7%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 export const Heading = styled.div`
@@ -16,6 +17,7 @@ export const Heading = styled.div`
   margin-top: 3%;
   margin-bottom: 3%;
   width: 80%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 export const TextHeading = styled.div`
@@ -26,7 +28,7 @@ export const TextHeading = styled.div`
   margin-bottom: 1%;
   text-align: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 25px;
   }
 `
@@ -47,7 +49,7 @@ export const Text = styled.div`
   font-weight: bold;
   text-align: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `
@@ -55,7 +57,7 @@ export const Text = styled.div`
 export const Link = styled.a`
   font-size: 25px
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `

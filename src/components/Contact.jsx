@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons'
 
 //styled components
 import { 
-  Container, Header, Info, EmailButton, FormContainer, FormSectionContainer
+  Container, Header, Info, Button, FormContainer, FormSectionContainer
 } from '../styled-components/ContactStyles'
 
 const icons = {
@@ -50,10 +50,15 @@ export default class Contact extends React.Component {
   }
 
   componentDidMount = () => {
-    if(window.innerWidth < 600) {
+    window.addEventListener('resize', this.updateWindowDimensions);
+    this.updateWindowDimensions()
+  }
+
+  updateWindowDimensions = () => {
+    if(window.innerWidth < 640) {
       this.setState({
-        inputSize: '25',
-        textAreaCols: '30',
+        inputSize: '30',
+        textAreaCols: '40',
         textAreaRows: '8'  
       })
     } 
@@ -102,7 +107,7 @@ export default class Contact extends React.Component {
         buttonText: '...sending'
       })
   
-      axios.post('/email', data)
+      axios.post('http://localhost:3000/email', data)
       .then( () => {
           this.setState({ sent: true }, this.resetForm())
       })
@@ -138,7 +143,7 @@ export default class Contact extends React.Component {
         <div style={icons}> 
             <SocialIcon url='https://www.linkedin.com/in/jacob-metzinger-a2b8a7142/' />
         </div>
-        {!emailOpen && <EmailButton type='button' onClick={this.openEmail}>Reach Out!</EmailButton>}
+        {!emailOpen && <Button type='button' onClick={this.openEmail}>Reach Out!</Button>}
         {emailOpen && <FormContainer>
           <form className='contact-form' onSubmit={ (e) => this.sendEmail(e)}>
             <FormSectionContainer>
@@ -165,8 +170,8 @@ export default class Contact extends React.Component {
             </FormSectionContainer>
 
             <div className='button--container' style={{ marginTop: '2%' }}>
-              <button type='submit' className='button button-primary' style={buttons}>{ this.state.buttonText }</button>
-              <button type='button' className='button button-cancel' onClick={this.openEmail} style={buttons}>Cancel</button>
+              <Button type='submit' className='button button-primary'>{ this.state.buttonText }</Button>
+              <Button type='button' className='button button-cancel' onClick={this.openEmail}>Cancel</Button>
             </div>
           </form>
         </FormContainer>}

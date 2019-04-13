@@ -17,8 +17,8 @@ app.use(parser.json())
 app.use(parser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, '../dist')))
 
-app.get('/ryan', (req, res) => {
-  res.send('Ryan is queer')
+app.get('/', (req, res) => {
+  console.log('trying to get')
 })
 
 app.post('/email', (req, res) => {

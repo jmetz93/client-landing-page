@@ -14,7 +14,7 @@ export const Header = styled.div`
   font-weight: bold;
   margin-bottom: 3%;
   text-decorator: underline;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 30px;
   }
 `
@@ -22,12 +22,12 @@ export const Header = styled.div`
 export const Info = styled.div`
   font-size: 20px;
   margin-bottom: 1%;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 15px;
   }
 `
 
-export const EmailButton = styled.button`
+export const Button = styled.button`
   background-color: #0000ff;
   border: none;
   color: white;
@@ -38,7 +38,9 @@ export const EmailButton = styled.button`
   font-size: 16px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 2%;
-  @media screen and (max-width: 600px) {
+  margin-right: 2%;
+  
+  @media screen and (max-width: 640px) {
     font-size: 12px;
     padding: 5px 15px;
   }

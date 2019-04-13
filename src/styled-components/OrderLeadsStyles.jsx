@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin-top: 3%;
 `
 
@@ -15,7 +15,8 @@ export const Heading = styled.div`
   background-color: #0000ff;
   margin-top: 5%;
   margin-bottom: 1%;
-  width: 100%;
+  width: 80%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 export const TextHeading = styled.div`
@@ -26,7 +27,7 @@ export const TextHeading = styled.div`
   margin-bottom: 1%;
   text-align: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 25px;
   }
 `
@@ -38,7 +39,7 @@ export const Title = styled.div`
   margin-bottom: 2%;
   font-weight: bold;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `
@@ -56,7 +57,7 @@ export const WatchThisRow = styled.div`
   text-align: center;
   font-weight: bold;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 18px;
   }
 `
@@ -66,7 +67,6 @@ export const Row = styled.div`
   flex-direction: row;
   font-size: 18px;
   margin-bottom: 1%;
-  text-align: center;
 `
 
 export const Link = styled.a`
@@ -77,15 +77,29 @@ export const Link = styled.a`
   font-size: 20px;
   font-weight: bold
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 14px;
+  }
+`
+
+export const WatchThisLink = styled.a`
+  text-decoration: underline;
+  margin-left: 1%;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: bold
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
   }
 `
 
 export const Text = styled.div`
   font-size: 18px;
+  
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 12px;
   }
 `
@@ -96,7 +110,7 @@ export const FbLeads = styled.div`
   margin-bottom: 1%
   font-weight: bold
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     font-size: 14px;
   }
 `
