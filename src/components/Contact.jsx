@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons'
 
 //styled components
 import { 
-  Container, Header, Info, Button, FormContainer, FormSectionContainer
+  Container, Header, Info, Button, ButtonPair, FormContainer, FormSectionContainer
 } from '../styled-components/ContactStyles'
 
 const icons = {
@@ -14,20 +14,6 @@ const icons = {
   flexDirection: 'row',
   justifyContent: 'center',
   marginTop: '1%'
-}
-
-const buttons = {
-  backgroundColor: '#0000ff',
-  border: 'none',
-  color: 'white',
-  padding: '10px 27px',
-  textAlign: 'center',
-  textDecoration: 'none',
-  display: 'inline-block',
-  fontSize: '16px',
-  boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',
-  marginRight: '10px',
-  marginTop: '10px',
 }
 
 const labels = {
@@ -170,8 +156,8 @@ export default class Contact extends React.Component {
             </FormSectionContainer>
 
             <div className='button--container' style={{ marginTop: '2%' }}>
-              <Button type='submit' className='button button-primary'>{ this.state.buttonText }</Button>
-              <Button type='button' className='button button-cancel' onClick={this.openEmail}>Cancel</Button>
+              <ButtonPair type='submit' className='button button-primary'>{ this.state.buttonText }</ButtonPair>
+              <ButtonPair type='button' className='button button-cancel' onClick={this.openEmail}>Cancel</ButtonPair>
             </div>
           </form>
         </FormContainer>}

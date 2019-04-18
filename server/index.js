@@ -9,8 +9,6 @@ const nodemailer = require('nodemailer')
 const app = express()
 const port = process.env.PORT
 
-const { sendEmail } = require('./email')
-
 app.use(cors())
 app.use(helmet())
 app.use(parser.json())

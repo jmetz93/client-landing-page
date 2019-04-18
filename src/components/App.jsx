@@ -65,7 +65,7 @@ export default class App extends React.Component {
                   <div style={{ marginTop: '.3%'}}>(424)216-2291</div>
                 </div>
                 <div style={icons}> 
-                    <SocialIcon url="https://www.linkedin.com/in/jacob-metzinger-a2b8a7142/" />
+                  <SocialIcon url="https://www.linkedin.com/in/jacob-metzinger-a2b8a7142/" />
                 </div>
             </div>
         </div>

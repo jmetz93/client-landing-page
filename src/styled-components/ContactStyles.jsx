@@ -38,12 +38,29 @@ export const Button = styled.button`
   font-size: 16px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 2%;
-  margin-right: 2%;
   
   @media screen and (max-width: 640px) {
     font-size: 12px;
     padding: 5px 15px;
   }
+`
+export const ButtonPair = styled.button`
+background-color: #0000ff;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+margin-top: 2%;
+margin-right: 2%;
+
+@media screen and (max-width: 640px) {
+  font-size: 12px;
+  padding: 5px 15px;
+}
 `
 
 export const FormContainer = styled.div`
