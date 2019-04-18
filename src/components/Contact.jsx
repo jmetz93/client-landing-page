@@ -83,7 +83,7 @@ export default class Contact extends React.Component {
       this.setState({
         formInputErrors
       })
-    } if (isValidEmail) {
+    } if (!isValidEmail) {
       formInputErrors.push('Email is not valid, please check that your email is correct.')
       this.setState({
         formInputErrors
@@ -97,20 +97,18 @@ export default class Contact extends React.Component {
       .then( () => {
           this.setState({ sent: true }, this.resetForm())
       })
-      .catch( () => {
-        console.log('Message not sent')
-      })
     }
   }
 
   resetForm = () => {
+    console.log('called')
     this.setState({
         name: '',
         message: '',
         email: '',
         buttonText: 'Message Sent',
     }, this.setState({
-      emailOpen: !emailOpen,
+      emailOpen: false,
       buttonText: 'Send'
     }))
   }

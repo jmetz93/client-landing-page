@@ -26,7 +26,7 @@ app.post('/email', (req, res) => {
     service: 'Gmail',
     port: 465,
     auth: {
-      user: process.env.EMAIL_JACOB,
+      user: process.env.EMAIL_ADDRESS,
       pass: process.env.EMAIL_PASSWORD
     }
   })
