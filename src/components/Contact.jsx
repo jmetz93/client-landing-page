@@ -36,10 +36,12 @@ export default class Contact extends React.Component {
   }
 
   componentDidMount = () => {
+    // check the size of screen to determine starting size for email input sizes
     window.addEventListener('resize', this.updateWindowDimensions);
     this.updateWindowDimensions()
   }
 
+  // need to change email input sizes when user is on phone
   updateWindowDimensions = () => {
     if(window.innerWidth < 640) {
       this.setState({
@@ -93,9 +95,9 @@ export default class Contact extends React.Component {
         buttonText: '...sending'
       })
   
-      axios.post('http://localhost:3000/email', data)
+      axios.post('http://3.16.10.212:3000/email', data)
       .then( () => {
-          this.setState({ sent: true }, this.resetForm())
+        this.setState({ sent: true }, this.resetForm())
       })
     }
   }
@@ -103,14 +105,15 @@ export default class Contact extends React.Component {
   resetForm = () => {
     console.log('called')
     this.setState({
-        name: '',
-        message: '',
-        email: '',
-        buttonText: 'Message Sent',
+      name: '',
+      message: '',
+      email: '',
+      buttonText: 'Message Sent',
     }, this.setState({
       emailOpen: false,
       buttonText: 'Send'
     }))
+    
   }
 
   render () {
@@ -125,7 +128,7 @@ export default class Contact extends React.Component {
         <Info>Phone: (424)-291-1987</Info>
         <Info>Email: ryanm@snlfinalexpense.com</Info>
         <div style={icons}> 
-            <SocialIcon url='https://www.linkedin.com/in/jacob-metzinger-a2b8a7142/' />
+            <SocialIcon url='https://www.linkedin.com/in/ryan-mattingly-08745a49/' />
         </div>
         {!emailOpen && <Button type='button' onClick={this.openEmail}>Reach Out!</Button>}
         {emailOpen && <FormContainer>
