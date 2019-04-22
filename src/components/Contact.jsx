@@ -95,7 +95,7 @@ export default class Contact extends React.Component {
         buttonText: '...sending'
       })
   
-      axios.post('http://3.16.10.212:3000/email', data)
+      axios.post('http://3.16.10.212/email', data)
       .then( () => {
         this.setState({ sent: true }, this.resetForm())
       })
