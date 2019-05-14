@@ -22,17 +22,20 @@ const labels = {
 }
 
 export default class Contact extends React.Component {
-  state = {
-    emailOpen: false,
-    name: '',
-    email: '',
-    sent: false,
-    message: '',
-    buttonText: 'Send',
-    formInputErrors: [],
-    inputSize: '50',
-    textAreaCols: '100',
-    textAreaRows: '10'
+  constructor(props) {
+    super(props)
+    this.state = {
+      emailOpen: false,
+      name: '',
+      email: '',
+      sent: false,
+      message: '',
+      buttonText: 'Send',
+      formInputErrors: [],
+      inputSize: '50',
+      textAreaCols: '100',
+      textAreaRows: '10'
+    }
   }
 
   componentDidMount = () => {
@@ -50,7 +53,7 @@ export default class Contact extends React.Component {
     } 
   }
 
-  openEmail = () => {
+  openEmail () {
     const { emailOpen } = this.state
     this.setState({
       emailOpen: !emailOpen
@@ -58,8 +61,9 @@ export default class Contact extends React.Component {
   }
 
   handleInput = (e) => {
+    const target = e.target.name
     this.setState({
-      [e.target.name]: e.target.value
+      [target]: e.target.value
     })
   }
 
@@ -88,12 +92,12 @@ export default class Contact extends React.Component {
       this.setState({
         formInputErrors
       })
-    } else {
+    } else if (isValidEmail && isFirstAndLastNameIncluded) {
       this.setState({
         buttonText: '...sending'
       })
   
-      axios.post('http://localhost:3000/email', data)
+      axios.post('/email', data)
       .then( () => {
           this.setState({ sent: true }, this.resetForm())
       })
