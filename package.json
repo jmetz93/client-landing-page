@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jmetz93/client-landing-page#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
     "cors": "^2.8.5",
